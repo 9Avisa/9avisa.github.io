@@ -1,36 +1,24 @@
 body {
-    font-size: 62.5%;
-    font-size: 2rem;
+    font-size: 100%;
+    font-size: 4vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
 }
 
 h1 {
     text-align: center;
-    font-size: 5rem;
+    padding-top: 20px;
+    font-size: 10vw;
 }
-h2 {
+small {
     text-align: center;
-    font-size: 3rem;
+    font-size: 7vw;
+    font-weight: lighter;
+    color: gray;
 }
 
 p {
-    font-size: 2rem;
-}
-
-section {
-    font-size: 3rem;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /*grid-template-rows: 1fr 1fr;*/
-    place-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    gap: 1rem 1rem;
+    font-size: 7vw;
 }
 
 a {
@@ -38,17 +26,32 @@ a {
     color: black;
 }
 
+section {
+    font-size: 14vw;
+}
+
+img {
+    width: 100%;
+}
+
+img.small {
+    width: 50%;
+}
+
+.wrapper {
+    width: 100%;
+}
 button {
     background-color: gray;
-    border-radius: 0.5rem;
+    border-radius: 5px;
     border: none;
     color: white;
-    padding: 1rem 1rem;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.75rem;
-    margin: 0.5rem 1rem;
+    font-size: 6vw;
+    margin: 5px 17.5px;
     cursor: pointer;
   }
 
@@ -56,6 +59,17 @@ button {
     background-color: rgb(86, 86, 238);
     justify-content: center;
     align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100%;
+    /*grid-template-rows: 1fr 1fr;*/
+    place-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px 10px;
 }
 
 article {
@@ -71,21 +85,154 @@ article {
     background-color: rgb(200, 200, 200);
     font-size: clamp(2em, 50%, 4em); */
     text-align: center;
-    border: 1rem solid lightgray;
-    border-radius: 0.25rem;
-    padding: 1.5rem;
+    border: 10px solid lightgray;
+    background-color: white;
+    border-radius: 2.5px;
+    padding: 15px;
     margin: 0;
   }
 
-.breaking {
-    border: 1rem solid red;
+article.breaking {
+    border: 10px solid red;
+}
+
+p.breaking {
+    color: red;
+    padding: 0;
+    margin: 0;
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: left;
 }
 
 footer {
     text-align: center;
     background-color: rgb(169, 169, 169);
-    border: 1rem solid rgb(169, 169, 169);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    margin: 1rem;
+    /*border: 1rem solid rgb(169, 169, 169);
+    border-radius: 1rem;*/
+    padding: 15px;
+    margin: 50px 0px 0px;
+}
+
+@media only screen and (min-width: 700px) {
+    .grid {
+        grid-template-columns: 50% 50%;
+        /*grid-template-rows: 1fr 1fr;*/
+    }
+    body {
+        font-size: 100%;
+        font-size: 3vw;
+    }
+    
+    h1 {
+        font-size: 8vw;
+    }
+    small {
+        font-size: 4vw;
+    }
+    
+    p {
+        font-size: 5vw;
+    }
+    
+    section {
+        font-size: 6vw;
+    }
+    
+    img {
+        width: 100%
+    }
+    
+    .wrapper {
+        width: 100%;
+    }
+    button {
+        font-size: 5vw;
+      }
+    
+    p.breaking {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .grid {
+        grid-template-columns: 50% 50%;
+        /*grid-template-rows: 1fr 1fr;*/
+    }
+    body {
+        font-size: 100%;
+        font-size: 3vw;
+    }
+    
+    h1 {
+        font-size: 6vw;
+    }
+    small {
+        font-size: 3vw;
+    }
+    
+    p {
+        font-size: 4vw;
+    }
+    
+    section {
+        font-size: 4vw;
+    }
+    
+    img {
+        width: 100%
+    }
+    
+    .wrapper {
+        width: 100%;
+    }
+    button {
+        font-size: 3vw;
+      }
+    
+    p.breaking {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .grid {
+        grid-template-columns: 50% 50%;
+        /*grid-template-rows: 1fr 1fr;*/
+    }
+    body {
+        font-size: 100%;
+        font-size: 2vw;
+    }
+    
+    h1 {
+        font-size: 4vw;
+    }
+    small {
+        font-size: 2vw;
+    }
+    
+    p {
+        font-size: 3vw;
+    }
+    
+    section {
+        font-size: 3vw;
+    }
+    
+    img {
+        width: 75%
+    }
+    
+    .wrapper {
+        width: 100%;
+    }
+    button {
+        font-size: 2vw;
+      }
+    
+    p.breaking {
+        font-size: 1.5vw;
+    }
 }

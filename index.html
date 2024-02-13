@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="styles.css"/>
-    <title>9Avisa - Heisann</title>
+    <title>9Avisa</title>
 </head>
 <body>
-    <h1>Velkommen til 9Avisa!</h1>
-    <h2>Den beste avisen for saftige klager av skolebussen!</h2>
+    <div class="wrapper">
+    <h1>Velkommen til 9Avisa!<br><small>Den beste avisen for saftige klager av skolebussen!</small></h1>
     <ul class="grid">
         <a href="kommentarfelt.html">
             <button type="button" class="fin">Chatte med 9Amazing!</button>
@@ -19,7 +19,8 @@
         <li>
             <article class="breaking">
                 <a href="Artikler/mia spåer 09.02.2024/Artikkel.html">
-                    <img src="Bilder/kansellert.avif" alt="buss krasjet" width="400px" height="300px">
+                    <p class="breaking">ØDELEGGELSE NYHETER:</p>
+                    <img src="Bilder\avlyst.webp" class="kansellert" alt="kansellert">
                     <section>
                         Mia har blitt avlyst!
                     </section>
@@ -28,8 +29,18 @@
         </li>
         <li>
             <article>
-                <a href="Artikler\buss sent 09.02.2024\buss sent 09.02.2024.html">
-                    <img src="Bilder/buss krasjet.avif" alt="buss krasjet" width="400px" height="300px">
+                <a href="Artikler/fri to fre 13.02.2024/Artikkel.html">
+                    <img src="Bilder/Gutt sitter i klasserom.avif" alt="fri">
+                    <section>
+                        Fri på torsdag og fredag!
+                    </section>
+                </a>
+            </article>
+        </li>
+        <li>
+            <article>
+                <a href="Artikler\buss sent 09.02.2024\Artikkel.html">
+                    <img src="Bilder\buss krasjet.avif" class="buss-krasj" alt="buss krasjet">
                     <section>
                         Bussen kommer sent IGJEN!
                     </section>
@@ -38,26 +49,16 @@
         </li>
         <li>
             <article>
-                <a href="Artikler\buss sent 09.02.2024\buss sent 09.02.2024.html">
-                    <img src="Bilder/buss krasjet.avif" alt="buss krasjet" width="400px" height="300px">
+                <a href="Artikler/send artikler 13.02.2024/Artikkel.html">
+                    <img src="Bilder/empty.jpg" alt="tomt">
                     <section>
-                        Bussen kommer sent IGJEN!
-                    </section>
-                </a>
-            </article>
-        </li>
-        <li>
-            <article>
-                <a href="Artikler\buss sent 09.02.2024\buss sent 09.02.2024.html">
-                    <img src="Bilder/buss krasjet.avif" alt="buss krasjet" width="400px" height="300px">
-                    <section>
-                        Bussen kommer sent IGJEN!
+                        Hjelp jeg trenger flere artikler
                     </section>
                 </a>
             </article>
         </li>
     </ul>
-
+    </div>
     <footer>
         <a href="Alternativ/omnettside.html">
             <button type="button">Hva er dette for noe?</button>
