@@ -38,6 +38,21 @@ img.small {
     width: 50%;
 }
 
+img.ad {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
 .wrapper {
     width: 100%;
 }
@@ -61,11 +76,23 @@ button {
     align-items: center;
 }
 
+.buttongrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 100%;
     /*grid-template-rows: 1fr 1fr;*/
     place-items: center;
+    justify-content: center;
+    align-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -84,12 +111,14 @@ article {
     border: 10px solid rgb(72, 72, 72);
     background-color: rgb(200, 200, 200);
     font-size: clamp(2em, 50%, 4em); */
+    display: block;
+    width: auto;
     text-align: center;
     border: 10px solid lightgray;
     background-color: white;
     border-radius: 2.5px;
     padding: 15px;
-    margin: 0;
+    margin: auto auto auto auto;
   }
 
 article.breaking {
@@ -103,6 +132,11 @@ p.breaking {
     font-size: 5vw;
     font-weight: bold;
     text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
 }
 
 footer {
@@ -119,6 +153,10 @@ footer {
         grid-template-columns: 50% 50%;
         /*grid-template-rows: 1fr 1fr;*/
     }
+    .buttongrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     body {
         font-size: 100%;
         font-size: 3vw;
@@ -134,13 +172,13 @@ footer {
     p {
         font-size: 5vw;
     }
+
+    img.ad {
+        width: 75%;
+    }
     
     section {
         font-size: 6vw;
-    }
-    
-    img {
-        width: 100%
     }
     
     .wrapper {
@@ -176,12 +214,12 @@ footer {
         font-size: 4vw;
     }
     
+    img.ad {
+        width: 60%;
+    }
+
     section {
         font-size: 4vw;
-    }
-    
-    img {
-        width: 100%
     }
     
     .wrapper {
@@ -223,6 +261,10 @@ footer {
     
     img {
         width: 75%
+    }
+
+    img.ad {
+        width: 50%;
     }
     
     .wrapper {
