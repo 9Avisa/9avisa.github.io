@@ -25,7 +25,7 @@ Artikler:
 <body>
     <a href="../../index.html"><button>Tilbake</button></a>
     <h1>Artikkel<small><br>Laget av:</small></h1>
-    <img src="../../Bilder/avlyst.webp" class="small" alt="noe">
+    <img src="../../Bilder/avlyst.webp" class="small center rounded" alt="noe">
 </body>
 </html>
 
